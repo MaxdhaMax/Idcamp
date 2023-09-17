@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .flex-container {
+        padding: 15px 15px 10px 10px;
+        display: flex;
+        background-color: #eeeeee;
+        justify-content: space-between;
+        }
+        .flex-container-sejarah {
+        padding: 15px 15px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        }
+        .flex-container-wisata {
+        padding: 0px 0px 10px 10px;
+        display: flex;
+        justify-content: center;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li,a {
+            padding: 12px;
+            color: black;
+        }
+        footer {
+            background-color: #ececec;
+            display: flex;
+            justify-content: center;
+            padding: 5px;
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        h1{
+            font-size: 36px;
+            margin-bottom: 4px;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        h2{
+            font-size: 30px;
+            margin-bottom: 16px;
+        }
+        h2.wisata{
+            font-size: 30px;
+            margin-bottom: 16px;
+            margin-left: 16px;
+        }
+
+        .wisata {
+            border-radius: 10px;
+        }
+
+        .description-wisata {
+            margin-left: 16px;
+        }
+
+    </style>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="">
+    <title>Travel To Bogor</title>
+    </head>
+    <body>
+        <header>
+            <div class="flex-container">
+                <section class="judul">
+                    <h1>Travel To Bogor</h1>
+                    <p>
+                    Apakah ada yang tidak mengenal kota hujan ini?
+                    </p>
+                </section>
+                <nav>
+                    <ul>
+                        <div class="flex-container">
+                            <li><a href="#sejarah">Sejarah</a></li>
+                            <li><a href="#wisata">Wisata</a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <aside>
+                <img src="Bogor-1.jpg" alt="">
+            </aside>
+            <Article class="sejarah" id="sejarah">
+                <div class="flex-container-sejarah">
+                    <div class="judul-article">
+                        <h2>Sejarah Bogor</h2>
+                    </div>
+                    <div class="description-sejarah">
+                        <p>Sejarah <b>Kota Bogor</b> dimulai pada abad ke-5 Masehi, ketika kota ini merupakan pusat Kerajaan Tarumanagara dengan raja yang bernama Purnawarman. Beberapa kerajaan lainnya kemudian memilih untuk bermukim di tempat yang sama dikarenakan daerah pegunungannya yang secara alamiah membuat lokasi ini mudah untuk bertahan terhadap ancaman serangan, dan di saat yang sama adalah daerah yang subur serta memiliki akses yang mudah pada sentra-sentra perdagangan saat itu 1. Pada masa kolonial Belanda, Kota Bogor dikenal dengan nama Buitenzorg yang berarti tanpa kecemasan atau aman tentram. Saat ini, Kota Bogor terkenal dengan julukan <b>Kota Hujan</b> karena memiliki curah hujan yang sangat tinggi</p>
+                    </div>
+                </div>
+            </Article>
+            <Article id="wisata">
+                <div class="judul">
+                    <h2 class="wisata">Tempat Wisata</h2> 
+                </div>
+                <div class="flex-container-wisata" id="#sejarah">
+                    <div class="gambar-article">
+                        <img src="let-s-get-lost-at-curug.jpg" alt="" class="wisata">
+                    </div>
+                    <div class="description-wisata">
+                        <div class="judul-article">
+                            <h2>Curug Cilember</h2>
+                        </div>
+                        <div class="description">
+                            <p>Sesuai namanya, obyek wisata ini berlokasi di Desa Cilember, Kecamatan Cisarua, Kabupaten Bogor. Baca juga: Curug Pangeran Bogor, Antara Mitos dan Kesegaran Air Terjun di Gunung Bunder Selain air terjun, Curug Cilember menawarkan sejumlah kegiatan lainnya bagi wisatawan, seperti camping, mengunungi hutan pinus, taman kupu-kupu, bermalam di rumah kepompong, dan villa.</p>
+                    </div>
+                </div>
+            </Article>
+        </main>
+        <footer> <p> Made with Love </p></footer>
+    </body>
+</html>
+
+<!-- Musti ada Header, Footer, main, Article, aside -->
+<!-- menerapkan konsep sematic html -->
+<!-- dalam aside ada gambar pake src -->
+<!-- pake flexbox -->
